@@ -1,0 +1,15 @@
+.box {
+  border: 1px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.selector, .dropdown {
+  padding: 20px;
+}
+
+.glyphicon {
+  float: right;
+}

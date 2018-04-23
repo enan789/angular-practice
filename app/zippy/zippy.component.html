@@ -1,0 +1,9 @@
+<div class="box">
+  <div class="selector" (click)="onClick()" [style.background-color]="clicked ?'gray':'white'">
+    {{title}}
+    <span class="glyphicon" [class.glyphicon-chevron-up]="!clicked" [class.glyphicon-chevron-down]="clicked"></span>
+  </div>
+  <div class="dropdown" *ngIf="clicked">
+    {{content}}
+  </div>
+</div>
