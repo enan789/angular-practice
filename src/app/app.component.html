@@ -4,19 +4,13 @@
     {{title | titleCase}}!
   </h1>
 </div>
-<h2>3 Authors</h2>
+<h2>Component Pages</h2>
 <app-courses>
 </app-courses>
-<zippy title="Shipping Details" content="Shipping Details Content">
-</zippy>
-<zippy title="Billing Details" content="Billing Details Content">
-</zippy>
+<app-new-course-form></app-new-course-form>
 <div class="glyphicon"
 [class.glyphicon-star]=isFavorite
 [class.glyphicon-star-empty]=!isFavorite
  (click)="toggleFavorite()"> </div>
- <input [(ngModel)]="textValue" type="text">
-<div>{{textValue | titleCase}}</div>
+
 <br>
-stuff
-<signup-form></signup-form>

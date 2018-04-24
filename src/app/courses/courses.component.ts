@@ -15,7 +15,7 @@ export class CoursesComponent implements OnInit {
       likesCount: 3,
     },
     {
-      isLiked: true,
+      isLiked: false,
       likesCount: 5,
     },
     {
@@ -30,5 +30,10 @@ export class CoursesComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  routeString(s: string) {
+    return '/' + s;
+  }
+
 
 }

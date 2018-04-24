@@ -1,6 +1,7 @@
 <ul>
   <li *ngFor="let course of courses; let i = index">
-    {{course}}
+    <a href="#" [routerLink]="['/'+ course]">{{course}}</a>
     <app-like [likesCount]="likeBodyArray[i].likesCount" [isActive]="likeBodyArray[i].isLiked"></app-like>
   </li>
 </ul>
+<router-outlet></router-outlet>

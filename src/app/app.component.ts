@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CoursesComponent } from './courses/courses.component';
 import { NgModel } from '@angular/forms';
 import { LikeComponent } from './like/like.component';
+import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,6 @@ import { LikeComponent } from './like/like.component';
 })
 export class AppComponent {
   title = 'angular of the something or other';
-  private textValue="";
   isFavorite = true;
 
   formCategories = [

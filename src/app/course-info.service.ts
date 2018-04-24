@@ -6,6 +6,6 @@ export class CourseInfoService {
   constructor() { }
 
   getCourses(): Array<string> {
-    return ['Zippy', 'New Course', 'Contact Form'];
+    return ['Dropdowns', 'DynamicCourses', 'ContactForm'];
   }
 }
