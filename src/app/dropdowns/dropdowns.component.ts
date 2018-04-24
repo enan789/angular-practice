@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dropdowns.component.css']
 })
 export class DropdownsComponent implements OnInit {
-  private textValue="enter text";
+  private textValue="default text";
 
   constructor() { }
 
