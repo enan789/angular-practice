@@ -2,9 +2,9 @@
   <div class="form-group">
     <label for="name">Course Name</label>
     <input ngModel required name="name" minlength="5" #name="ngModel" type="text" class="form-control">
-    <div class="alert alert-danger" *ngIf="!name.invalid && name.touched">
-      <div *ngIf="!name.errors.required">Course Name Required</div>
-      <div *ngIf="!name.errors.minlength">5 Character Minimum</div>
+    <div class="alert alert-danger" *ngIf="!name.valid && name.touched">
+      <div *ngIf="name.errors.required">Course Name Required</div>
+      <div *ngIf="name.errors.minlength">5 Character Minimum</div>
     </div>
   </div>
   <div class="form-group">
@@ -14,14 +14,14 @@
         {{category.name}}
       </option>
     </select>
-    <div class="alert alert-danger" *ngIf="!categories.invalid && categories.touched">
-      <div *ngIf="!categories.errors">Category Required</div>
+    <div class="alert alert-danger" *ngIf="!categories.valid && categories.touched">
+      <div *ngIf="categories.errors">Category Required</div>
     </div>
     <input id="comment" cols="30" rows="10" class="form-control">
   </div>
   <div class="form-group">
     <div class="checkbox">
-      <input type="checkbox" ngModel name="hasGuaruntee">
+      <input type="checkbox" ngModel name="hasGuaruntee" #hasGuaruntee class="checkClass">
       <label>
         30-day money-back guaruntee
       </label>

@@ -1,3 +1,8 @@
 .form-control.ng-touched.ng-invalid {
   border: 2px solid red;
 }
+
+.checkClass {
+  margin-left: 0px !important;
+  margin-right: 3px !important;
+}

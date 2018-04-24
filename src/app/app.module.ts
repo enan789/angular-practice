@@ -17,7 +17,8 @@ import { DynamicCategoriesComponent } from './dynamic-categories/dynamic-categor
 
 const appRoutes: Routes = [
   {path:'Dropdowns', component:DropdownsComponent},
-  {path:'DynamicCourses', component:DynamicCategoriesComponent}
+  {path:'DynamicCourses', component:DynamicCategoriesComponent},
+  {path:'ContactForm', component:ContactFormComponent}
 ]
 
 @NgModule({

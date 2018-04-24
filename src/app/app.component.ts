@@ -11,6 +11,7 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
 })
 export class AppComponent {
   title = 'angular of the something or other';
+  isFavorite = true;
 
   formCategories = [
     {name:'Development', id:1},
