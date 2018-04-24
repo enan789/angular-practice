@@ -6,6 +6,6 @@ export class CourseInfoService {
   constructor() { }
 
   getCourses(): Array<string> {
-    return ['course1', 'course2', 'course3'];
+    return ['Zippy', 'New Course', 'Contact Form'];
   }
 }

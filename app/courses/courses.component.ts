@@ -9,6 +9,20 @@ import { CourseInfoService } from '../course-info.service';
 export class CoursesComponent implements OnInit {
 
   courses = [];
+  likeBodyArray = [
+    {
+      isLiked: false,
+      likesCount: 3,
+    },
+    {
+      isLiked: true,
+      likesCount: 5,
+    },
+    {
+      isLiked: false,
+      likesCount: 2,
+    }
+  ]
 
   constructor(courseInfoService : CourseInfoService) {
     this.courses = courseInfoService.getCourses();

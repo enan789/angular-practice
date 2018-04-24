@@ -12,11 +12,6 @@ export class AppComponent {
   title = 'angular of the something or other';
   private textValue="";
   isFavorite = true;
-  tweet = {
-    body: 'tweet tweet',
-    isLiked: false,
-    likesCount: 10,
-  }
 
   formCategories = [
     {name:'Development', id:1},

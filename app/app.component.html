@@ -17,8 +17,6 @@
  (click)="toggleFavorite()"> </div>
  <input [(ngModel)]="textValue" type="text">
 <div>{{textValue | titleCase}}</div>
-<app-like [likesCount]="tweet.likesCount" [isActive]="tweet.isLiked">
-</app-like>
 <br>
 stuff
 <signup-form></signup-form>
