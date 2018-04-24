@@ -31,9 +31,5 @@ export class CoursesComponent implements OnInit {
   ngOnInit() {
   }
 
-  routeString(s: string) {
-    return '/' + s;
-  }
-
 
 }

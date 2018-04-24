@@ -13,9 +13,11 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
 import { DropdownsComponent } from './dropdowns/dropdowns.component';
+import { DynamicCategoriesComponent } from './dynamic-categories/dynamic-categories.component';
 
 const appRoutes: Routes = [
-  {path:'Dropdowns', component:DropdownsComponent}
+  {path:'Dropdowns', component:DropdownsComponent},
+  {path:'DynamicCourses', component:DynamicCategoriesComponent}
 ]
 
 @NgModule({
@@ -28,7 +30,8 @@ const appRoutes: Routes = [
     ContactFormComponent,
     SignupFormComponent,
     NewCourseFormComponent,
-    DropdownsComponent
+    DropdownsComponent,
+    DynamicCategoriesComponent
   ],
   imports: [
     BrowserModule,
