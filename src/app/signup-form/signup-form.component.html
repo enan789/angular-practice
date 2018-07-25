@@ -8,7 +8,7 @@
             id="username"
             type="text"
             class="form-control">
-        <div *ngIf="username.touched && username.invalid" class="alert-danger">
+        <div *ngIf="username.touched && username.invalid" class="alert alert-danger">
           <div *ngIf='username.errors.required'>Username is required</div>
           <div *ngIf='username.errors.minlength'>Username should have a minimum of {{ username.errors.minlength.requiredLength }}</div>
           <div *ngIf='username.errors.cannotContainSpace'>Username can't contain space</div>
@@ -17,12 +17,16 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="password">Password</label>
-        <input
-            formControlName="password"
-            id="password"
-            type="text"
-            class="form-control">
+      <label for="password">Password</label>
+      <input
+          formControlName="password"
+          id="password"
+          type="text"
+          class="form-control">
+      <div *ngIf="password.touched && password.invalid" class="alert alert-danger">
+        <div *ngIf='password.errors.required'>Password is required</div>
+        <div *ngIf='password.errors.minlength'>Username should have a minimum of {{ password.errors.minlength.requiredLength }}</div>
+      </div>
     </div>
     <button class="btn btn-primary" type="submit">Sign Up</button>
   </div>

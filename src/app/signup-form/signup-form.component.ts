@@ -15,7 +15,8 @@ export class SignupFormComponent {
         Validators.minLength(3),
         UsernameValidators.cannotContainSpace,
         UsernameValidators.shouldBeUnique]),
-      password: new FormControl('', Validators.required)
+      password: new FormControl('', [Validators.required,
+                                      Validators.minLength(6)])
     })
 
   });
@@ -30,6 +31,11 @@ export class SignupFormComponent {
   }
   get username() {
     console.log(this.form);
-    return this.form.get('username');
+    return this.form.get('account.username');
   }
+  get password() {
+    console.log(this.form);
+    return this.form.get('account.password');
+  }
+
 }
