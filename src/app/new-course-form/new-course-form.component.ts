@@ -18,7 +18,17 @@ export class NewCourseFormComponent implements OnInit {
   }
 
   addTopic(topic: HTMLInputElement) {
-    (this.form.get('topics') as FormArray).push(new FormControl(topic.value));
+    this.topics.push(new FormControl(topic.value));
+  }
+
+  deleteTopic(topic: FormControl) {
+    let i = this.topics.controls.indexOf(topic);
+    console.log(i,topic)
+    this.topics.removeAt(i);
+  }
+
+  get topics() {
+    return this.form.get('topics') as FormArray;
   }
 
 }
